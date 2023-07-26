@@ -1,12 +1,14 @@
 html {
-    height: 125%;
+    background-image: linear-gradient(18deg, #0093E9 10%, #80b2dc 65%, #ffffff 90%);
+    background-repeat: no-repeat;
 }
 
 
 body {
-    
-    /* background-image: linear-gradient(18deg, #0093E9 14%, #80d0dc 54%, #ffffff 100%); */
-    background-image: linear-gradient(22deg, #0093E9 10%, #80b2dc 65%, #ffffff 90%);
+    background-image: url(IMAGES/21_07_2023\ 18_14_12.png);
+    background-position:  top center;
+    background-repeat: no-repeat;
+    background-size: 60%;
     font-family: 'Roboto', sans-serif;
     font-size: 1.25rem  ;
     color: white;
@@ -14,8 +16,8 @@ body {
 }
 
 .container {
-      width: 1024px;
-    min-height: 300px;  
+    width: 68%;
+    min-height: 100%;  
     margin-left: auto;
     margin-right: auto;
 }
@@ -27,13 +29,47 @@ header {
    padding-top: 20px;
    padding-bottom: 20px;
    color: #095480;
+   border-bottom: 0.2px solid #095480;
 }
 
 .UpperLogo img {
      height: 70px;
 }
+
+.navbutton  {
+    border-color: #095480;
+    font-family: "Times New Roman";
+    padding: 11px 25px;
+    border-radius: 9px;
+    display: inline-block;
+    background-color: #77afdc;
+    position: relative;
+}
+
+.navbutton:hover {
+    background-color: white;
+    color: #77afdc;
+    transition-duration: 0.5s;
+}
+
+.dropdown-box {
+     display: none;
+     position: absolute;
+     z-index: 1;
+     padding-top: 10px;
+     text-align: center;
+}
+
+.navbutton:hover .dropdown-box {
+    display: block;
+}
+
+.dropdown-box .navbutton {
+    width: 100px;
+}
+
 main {
-    min-height: 300px;
+    min-height: 20.5%;
     display: flex;
     align-items: center;
 }
@@ -52,7 +88,7 @@ main {
 
 .herobox1 p {
    font-size: 1.2rem;
-    line-height: 1.75rem;
+    line-height: 3rem;
     margin-bottom: 1rem;
 }
 
@@ -66,6 +102,40 @@ main {
     margin-bottom: 20px;
     margin-top: 10px;
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.219);
+}
+
+.mailbutton:hover {
+    background-color: #0094e927;
+    color: white;
+    transition-duration: 0.5s;
+}
+
+.main2 {
+    min-height: 300px;
+    text-align: center;
+}
+
+.main2 h1 {
+    font-size: 3rem;
+    font-family: "Times New Roman";
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    color: #095480;
+}
+
+.main2 p {
+    font-size: 1.27rem;
+    line-height: 2rem;
+    margin-bottom: 1rem;
+    padding-left: 80px;
+    padding-right: 100px;
+    color: #095480
+}
+
+label {
+    color: #095480;
+    font-size: 1.27rem;
+    line-height: 2rem;
 }
 
 .herobox2 {
@@ -134,4 +204,26 @@ h2 {
     margin-top: 10px;
 }
 
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
 
+
+
+.tbox {
+    width: 47%;
+    padding: 50px;
+    border: 1px solid #095480;
+    box-sizing: border-box;
+    margin-top: 50px;
+    line-height: 1.6rem;
+}
+
+.tbox p:last-of-type {
+    font-size: 0.85rem;
+    padding-left: 30px;
+    padding-top: 7px;
+}
