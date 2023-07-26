@@ -1,1 +1,0 @@
-# RoyTech-Company
